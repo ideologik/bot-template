@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'TechKr';
+  src: url('../../fonts/TECHKR__.TTF') format('truetype');
+  /* Asegúrate de ajustar la ruta del archivo de fuente según tu estructura de carpetas */
+}
+
+.ContainerRobot {
+  position: relative;
+  height: 100Vh;
+  width: 100vw;
+  background-image: url('../../resouses/imgFondoRobot.jpg');
+  background-size: cover;
+}
+
+.Btn_mic_off {
+  background-image: url('/public/template/btn_mic_off.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 25vw;
+  height: 15.5vh;
+  top: 80vh;
+  left: 38.5vw;
+  z-index: 10;
+}
+
+.separador {
+  background-image: url('/public/template/separador-static.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100vw;
+  height: 16vh;
+  top: 63vh;
+  left: 0;
+  z-index: 10;
+}
+
+.chat-user {
+  background-image: url('/public/template/chat-user.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 20vw;
+  height: 55vh;
+  top: 5vh;
+  right: 1.5vh;
+  z-index: 10;
+}
+
+.chat-bot {
+  background-image: url('/public/template/chat-bot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 18vw;
+  height: 55vh;
+  top: 5vh;
+  left: 5vh;
+  z-index: 10;
+}
+
+.bootom-fade {
+  background-image: url('/public/template/degradé-footer.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top: 50vh;
+  left: 0;
+  z-index: 5;
+}
+
+.content-footer {
+  background-image: url('/public/template/content-footer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 25vw;
+  height: 18vh;
+  top: 80vh;
+  left: 5vw;
+  z-index: 5;
+
+}
+
+.btn-Bateria {
+  background-image: url('/public/template/btn_bat.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 5vw;
+  height: 7vh;
+  top: 4vh;
+  left: 1vw;
+  z-index: 5;
+
+}
+
+.btn-volver {
+  background-image: url('/public/template/btn-volver.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 5vw;
+  height: 7vh;
+  top: 4vh;
+  left: 40%;
+  z-index: 5;
+}
+
+.btn-Avanzar {
+  background-image: url('/public/template/btn-avanzar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 5vw;
+  height: 7vh;
+  top: 4vh;
+  left: 75%;
+  z-index: 5;
+}
+
+.ProgressBar {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  width: 90%;
+}
+
+.avance {
+  width: 5%;
+}
+
+.Text-area {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  top: 25%;
+  left: 12.5%;
+  width: 75%;
+  max-height: 67%;
+  overflow-y: scroll;
+  color: green;
+  resize: none;
+  font-size: 5rem;
+  font-family: 'TechKr';
+  line-height: .4;
+}
+
+.Text-area::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Text-area::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.Text-area::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.Text-area::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.content-footer-Audio {
+
+  position: absolute;
+  width: 25vw;
+  height: 18vh;
+  top: 80vh;
+  right: 5vw;
+  z-index: 10;
+}

@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Template.css";
 import ComponentWave from '../soundBar/SoundWaveComponent';
+
+
 
 export const Template = () => {
   const [state, setstate] = useState('LOREM IPSUM DOLOR SIT AMET CONSECTETUR, ADIPISICING ELIT. CUPIDITATE TEMPORE APERIAM VOLUPTATES VITAE DOLORUM ELIGENDI. CONSEQUUNTUR QUOD EA VEL ASPERNATUR PORRO MODI AT EXPEDITA HARUM DESERUNT NISI, IMPEDIT, ALIQUID CUMQUE?')
@@ -8,11 +10,15 @@ export const Template = () => {
 
   const numbers = Array.from({ length: 20 }, (_, index) => index + 1);
 
+  const [animationClass, setAnimationClass] = useState('');
+
+
+
 
   return (
     <div className='ContainerRobot'>
       <div className='Btn_mic_off' />
-      <div className='separador' />
+      <div className={`separador ${animationClass}`} />
       <div className='chat-bot' >
         <p className='Text-area' >{state}</p>
       </div>
